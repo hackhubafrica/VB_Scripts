@@ -5,7 +5,7 @@ Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.GetFile("C:\Windows\Netlogon.log")
 
 If objFile.Size > 0 Then
-    Set objReadFile = objFSO.OpenTextFile("C:\Windows\Netlogon.log", 1)
+    Set objReadFile = objFSO.OpenTextFile("E:\VBScript", 1)
     strContents = objReadFile.ReadAll
     Wscript.Echo strContents
     objReadFile.Close
